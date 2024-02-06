@@ -9,5 +9,20 @@ h1, h2, h3, h4, h5, h6, p, td {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: rgb(191, 191, 191);
+}
+
+.pfp {
+    width: 200px;
+    background-color: #ffffff80;
+    border: 1px solid #dededf;
+    padding: 0;
+}
+
+td {
+    background-color: #ffffff80;
+    border: 1px solid #dededf;
+}
+
+img {
+    display: block;
 }
