@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="index.css" />
-    </head>
-    <body style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <table cellspacing="0">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th class="pfp"><a href="https://github.com/leo-chartier" target="_blank"><img src="https://gravatar.com/avatar/c8a06da2c80a003656e90ab4afa49ea8?size=200&d=mp" alt="Léo's profile picture"></a></th>
-                    <th class="pfp"><a href="https://github.com/TechXplorerFR" target="_blank"><img src="https://gravatar.com/avatar/7ee700629d8c99bc3e39fa4232f67f1e?size=200&d=mp" alt="Antoine's profile picture"></a></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>First name</td>
-                    <td>Léo</td>
-                    <td>Antoine</td>
-                </tr>
-                <tr>
-                    <td>Last name</td>
-                    <td>CHARTIER</td>
-                    <td>PREVOST</td>
-                </tr>
-                <tr>
-                    <td>Age<br></td>
-                    <td>22</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Favorite joke</td>
-                    <td>I'm Léo</td>
-                    <td>Qu'est ce qui est jaune et qui attends?</td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+  <head>
+    <title>About Léo and Antoine</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    "
+  >
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="pfp">
+            <a href="https://github.com/leo-chartier" target="_blank"
+              ><img
+                src="https://gravatar.com/avatar/c8a06da2c80a003656e90ab4afa49ea8?size=200&d=mp"
+                alt="Léo's profile picture"
+            /></a>
+          </th>
+          <th class="pfp">
+            <a href="https://github.com/TechXplorerFR" target="_blank"
+              ><img
+                src="https://gravatar.com/avatar/7ee700629d8c99bc3e39fa4232f67f1e?size=200&d=mp"
+                alt="Antoine's profile picture"
+            /></a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First name</td>
+          <td>Léo</td>
+          <td>Antoine</td>
+        </tr>
+        <tr>
+          <td>Last name</td>
+          <td>CHARTIER</td>
+          <td>PREVOST</td>
+        </tr>
+        <tr>
+          <td>Age<br /></td>
+          <td>22</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Favorite joke</td>
+          <td>I'm Léo</td>
+          <td>Qu'est ce qui est jaune et qui attends?</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      let mySound = new Audio("presentation.mp3");
+      document.addEventListener("click", function () {
+        mySound.play();
+        mySound.loop = true;
+      });
+    </script>
+  </body>
 </html>
